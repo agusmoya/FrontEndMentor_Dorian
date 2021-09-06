@@ -17,6 +17,84 @@ Fuentes de la página
         Estilo 400
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     background-color: #333;
-  }
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.cards {
+    width: 90%;
+    height: 500px;
+    margin: 200px auto;
+    /* este hack es para solucionar
+    la aparicion de un margen por el
+    inline-block de los hijos*/
+    font-size: 0;
+}
+
+.card {
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+    display: inline-block;
+    width: 300px;
+    text-align-last: left;
+    /* este height con porcentaje tiene sentido, 
+    ya que su padre tiene un height declarado */
+    height: 100%;
+    padding-top: 3em;
+    padding-left: 2em;
+    /* == 16px; Esto lo ponemos para 
+    suplir el hacke del padre*/
+    font-size: 1rem;
+    color: hsl(0 0% 100% / 0.75);
+}
+
+.card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.card__description {
+    width: 200px;
+}
+
+.card--orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card--cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card--dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card__cta {
+    position: absolute;
+    padding: 0.7em 2em;
+    background-color: #fff;
+    border-radius: 1.2em;
+    text-decoration: none;
+    bottom: 50px;
+}
+
+.card__cta--orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.card__cta--cyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.card__cta--dark-cyan {
+    color: hsl(179, 100%, 13%);
+}
