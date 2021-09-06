@@ -17,6 +17,8 @@ Fuente de la página
   body {
       background-color: hsl(0, 0%, 90%);
       font-family: 'Karla', sans-serif;
+      width: 1400px;
+      margin: 10em auto;
   }
 
   .bg-image {
@@ -29,7 +31,39 @@ Fuente de la página
       left: 0;
   }
 
-  .bg-image--bottom{
+  .bg-image--bottom {
       bottom: 0;
       right: 0;
+  }
+
+  .header,
+  .aside {
+      display: inline-block;
+      width: 450px;
+  }
+
+  .header {
+      margin-right: 400px;
+  }
+
+  .main-title {
+      font-size: 3rem;
+      color: hsl(300, 43%, 22%);
+  }
+
+  .rate {
+      position: relative;
+      margin-bottom: 1em;
+      padding: 0 2em;
+      border-radius: 10px;
+      line-height: 5em;
+      background-color: hsl(300, 24%, 96%);
+  }
+
+  .rate--first{
+      left: -75px;
+  }
+
+  .rate--second{
+      left: -50px;
   }
