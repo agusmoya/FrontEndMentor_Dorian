@@ -1,1 +1,1 @@
-body{background-color:#111;color:aliceblue}
+body{background-color:#111;color:aliceblue;text-align:center;font-weight:400}.main-title{display:block;font-size:2.5rem}.subtitle{width:30%;margin-left:auto;margin-right:auto}.cards{position:relative;width:1200px;height:550px;margin:5em auto}.card{position:absolute;width:350px;height:250px;background-color:hsl(0,0%,93%)}.card--left{left:0;top:150px}.card--top{top:0;left:425px}.card--right{right:0;top:150px}.card--bottom{bottom:0;left:425px}
