@@ -1,5 +1,4 @@
-  
-/*
+  /*
 Colores
   purple: hsl(263, 55%, 52%)
   grey: hsl(217, 19%, 35%)
@@ -9,10 +8,119 @@ Fuente de la página
   Estilos 500 y 600
 */
 
-* {
-    box-sizing: border-box;
+  * {
+      box-sizing: border-box;
   }
-  
+
   body {
-    background-color: #333;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      background-color: #333;
+      font-weight: 500;
+  }
+
+  .grid-container {
+      position: relative;
+      width: 1400px;
+      margin: 3rem auto;
+  }
+
+  .card {
+      position: relative;
+      /* no hará efecto hasta declarar un ancho */
+      display: inline-block;
+      height: 400px;
+      vertical-align: top;
+      margin-right: 1.5em;
+      padding: 2em;
+      line-height: 1.5;
+      border-radius: 1em;
+  }
+
+  .card--first {
+      width: 675px;
+  }
+
+  .card--second {
+      width: 350px;
+  }
+
+  .card__quotes {
+      /* para que no ocupen espacio */
+      position: absolute;
+      top: 4em;
+      right: 10em;
+  }
+
+  .card__title {
+      position: relative;
+  }
+
+  .card__text {
+      opacity: 0.7;
+  }
+
+  .card--third {
+      margin-right: 0;
+      width: 300px;
+      height: 825px;
+  }
+
+  .card--fourth,
+  .card--fifth {
+      top: 425px;
+      position: absolute;
+  }
+
+  .card--fourth {
+      left: 0;
+      width: 325px;
+  }
+
+  .card--fifth {
+      left: 355px;
+      width: 700px;
+  }
+
+  .card--purple,
+  .card--grey,
+  .card--black {
+      color: #fff;
+  }
+
+  .card--purple {
+      background-color: hsl(263, 55%, 52%);
+  }
+
+  .card--grey {
+      background-color: hsl(271, 19%, 35%);
+  }
+
+  .card--black {
+      background-color: hsl(219, 29%, 14%);
+  }
+
+  .card--white {
+      background-color: #fff;
+      color: #000;
+  }
+
+  .user {
+      width: 250px;
+  }
+
+  .user__image {
+      border-radius: 50%;
+      min-width: 25%;
+  }
+
+  .user__image,
+  .user__info {
+      display: inline-block;
+      vertical-align: middle;
+  }
+
+  .user__name,
+  .user__category {
+      margin: 0.5em 1em;
+      opacity: .5;
   }
